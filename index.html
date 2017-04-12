@@ -16,9 +16,7 @@ body {
 	  font-size: 24px;
 	  font-weight:bold;
 	  text-shadow: 0 -1 rgba(0,0,0,.8);
-	  color:#ddd;
     transition: background-color.5s;
-	  overflow-y:hidden;
 }
 .sidenav {
     height: 100%;
@@ -31,6 +29,7 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+	  overflow-y:hidden;
 }
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -40,6 +39,7 @@ body {
     display: block;
     transition: 0.3s;
 		margin-left:-20px;	
+	  overflow-y:hidden;
 }
 .sidenav a:hover, .offcanvas a:focus{
     color: #818181;
@@ -77,9 +77,9 @@ span {
 </head>
 
 <body>
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav" style="overflow-y:hidden;">
 	<p style="position:absolute; top:10px;left:-80px;width:260px;">&nbsp;<em>EzMusic</em>
-	<a style="position:absolute; top:10px;right:10px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></p> 
+	<a style="position:absolute; top:-30px;right:0px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></p> 
 	<a style="margin-top:-20px;margin-left:-46px;" id="about" href="abt.hmtlr" target="myFrame">About</a>
 	<a style="margin-top:-10px;margin-left:-46px;" id="social" href="fbIframe.html" target="myFrame">Social</a>	
   <a style="margin-top:-10px;margin-left:-46px;" id="chat" href="https://friendly-chat-b2d6a.firebaseapp.com/" target="_blank">Contact</a>
