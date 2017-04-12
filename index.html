@@ -16,7 +16,6 @@ body {
     font-family: Comic Sans MS;
     transition: background-color.5s;
 }
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -29,7 +28,6 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -39,11 +37,9 @@ body {
     transition: 0.3s;
 		margin-left:-20px;	
 }
-
 .sidenav a:hover, .offcanvas a:focus{
     color: #818181;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -51,12 +47,10 @@ body {
     font-size: 36px;
     margin-left: 20px;
 }
-
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -66,51 +60,36 @@ body {
 	height:48px;
   position:absolute;
   top:0px;
-		}
+}
 #moframe {
   width:100%;
 	height:100%;	
-		}
-	</style>
+}
+span {
+	cursor:pointer;
+	color:#FFF;
+}
+</style>
 </head>
 
 <body>
-	<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1210299969069277',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 	<div id="mySidenav" class="sidenav">
-		<img src="logo.gif" width="128px" height="48px" style="float:left;margin-left:3px; margin-top:-46px;" />
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <br> 
-		<!--<a id="myBtn" href="dls.html" target="_blank">Downloads</a>-->
+	<img src="logo.gif" width="128px" height="48px" style="position:absolute;top:4px;left:3px;" /><br> 
+  <a id="about" href="dl.html" target="myFrame">Download</a>
 	<a id="repos" href="https://github.com/lifeluvr?tab=repositories" target="_blank">Repos</a>	
-  <a id="about" href="https://github.com/lifeluvr" target="_blank">About</a>
-  <a id="chat" href="https://friendly-chat-b2d6a.firebaseapp.com/" target="_blank">Contact</a>
+  <a id="about" href="https://github.com/lifeluvr" target="myFrame">About</a>
+	<a id="repos" href="fbIframe.html" target="myFrame">Social</a>	
+  <a id="chat" href="https://friendly-chat-b2d6a.firebaseapp.com/" target="myFrame">Contact</a>
 		<br>
-		<div style="position:absolute;bottom:0px;padding-right:-10px;">
-		<div class="fb-page" data-href="https://www.facebook.com/dcezmusic/" data-tabs="timeline" data-width="200" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/EzMusic/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/EzMusic/">EzMusic</a></blockquote></div>
-</div>
-	</div>		
-	<div id="header">
-	 <a type="action" class="btn btn-lg" style="margin-left:0px;">
-		 <span style="position:absolute;top:16px;left:21px;font-size:30px;cursor:pointer; color:#FFFFFF;" onclick="openNav()">&#9776;</span></a></div>
+		<iframe src="fbIframe.html" id="myFrame" style="width:200px;height:400px; position:absolute;bottom:0px;left:0px"></iframe>
+	</div>	
+		 <div id="header">
+	  <a type="action" class="btn btn-lg" style="margin-left:0px;">
+		 <span style="position:absolute;top:10px;left:15px;font-size:30px;" onclick="openNav()">&#9776;</span>
+		</a>
+	</div>	
   <div id="app"></div>
-	
 	<script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "200px";
@@ -132,9 +111,6 @@ $(document).ready(function(){
 });
 </script>
 	
-	<!--
-	<a id="qr" href="https://github.com/lifeluvr/ezmusic/raw/gh-pages/Ez%20Music%20APK%20for%20Android/ezmusic.apk" style="position:absolute;bottom:0px;right:2px;"><img src="dlqr.png" width="100px" height="100px"/></a>
-  -->
 	<script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script> 
