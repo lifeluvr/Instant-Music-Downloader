@@ -76,7 +76,31 @@ body {
 </head>
 
 <body>
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1210299969069277',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 	<div id="mySidenav" class="sidenav">
+		<div
+  class="fb-like"
+  data-share="true"
+  data-width="160"
+  data-show-faces="true">
+</div>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <!--<a id="myBtn" href="dls.html" target="_blank">Downloads</a>-->
 	<a id="repos" href="https://github.com/lifeluvr?tab=repositories" target="_blank">Repos</a>	
