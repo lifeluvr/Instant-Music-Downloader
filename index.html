@@ -26,10 +26,10 @@ body {
     top: 0;
     left: 0;
     background-color: #FFF;
-    overflow-x: hidden;
     transition: 0.5s;
     padding-top: 20px;
 	  overflow-y:hidden;
+	  overflow-x: hidden;
 }
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -39,6 +39,7 @@ body {
     display: block;
     transition: 0.3s;
 	  overflow-y:hidden;
+	  overflow-x: hidden;
 }
 .sidenav a:hover, .offcanvas a:focus{
     color: #818181;
@@ -64,7 +65,10 @@ body {
   top:0px;
 }
 #myframe {
-  position:absolute;top:0px;left:0px;
+  position:absolute;
+	top:0px;
+	left:0px;
+	overflow-x: hidden;
 }
 span {
 	cursor:pointer;
