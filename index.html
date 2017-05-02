@@ -1,16 +1,118 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>Instant Music Downloader</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./public/b124bec3d66a2331e286f87298716c24.css" rel="stylesheet">
+  <title>EzMusic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="./public/c18ee732f991dc234ab539e0cf7f4e3e.css" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.png">
+<style type="text/css">
+body {
+    font-family: Comic Sans MS;
+	  font-size: 24px;
+	  font-weight:bold;
+	  text-shadow: 0 -1 rgba(0,0,0,.8);
+    transition: background-color.5s;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    transition: 0.5s;
+    padding-top: 0px;
+	  overflow-y:hidden;
+	  overflow-x: hidden;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #121212;
+    display: block;
+    transition: 0.3s;
+	  overflow-y:hidden;
+	  overflow-x: hidden;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #818181;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 36px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#header {
+	width:100%;
+	height:48px;
+  position:absolute;
+  top:0px;
+}
+#myframe {
+  position:absolute;
+	top:0px;
+	left:0px;
+	overflow-x: hidden;
+}
+span {
+	cursor:pointer;
+	color:#FFF;
+}
+</style>
 </head>
 
 <body>
+<div id="mySidenav" class="sidenav" style="overflow-y:hidden;">
+	<a style="position:absolute; top:0px;left:200px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<iframe src="fbIframe.html" name="myFrame" id="myFrame" width="310" height="440" style="border:0px;overflow-y:hidden;"></iframe>	
+	
+	<a style="margin-left:-40px;" id="download" href="dl.html" target="myFrame">Download</a>	
+  <a style="margin-top:-10px;margin-left:-40px;" id="chat" href="https://friendly-chat-b2d6a.firebaseapp.com/" target="_blank">Contact</a>
+	</div>
+	<div id="header"><a type="action" class="btn btn-lg" style="margin-top:6px;">
+	<span style="position:absolute;top:5px;left:10px;font-size:30px;" onclick="openNav()">&#9776;</span>
+		</a></div>	
   <div id="app"></div>
-  <script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
-</body>
+	<!--a id="repos" href="https://github.com/lifeluvr?tab=repositories" target="_blank">Repos</a-->		
+	<script type="text/javascript">
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+}
+</script>
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+	
+	<script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
+	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script> 
+</body>
 </html>
