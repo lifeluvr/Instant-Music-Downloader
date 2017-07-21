@@ -13,55 +13,20 @@
 <style type="text/css">
 body {
     font-family: Comic Sans MS;
-	  font-size: 24px;
+	  font-size: 20px;
 	  font-weight:bold;
 	  text-shadow: 0 -1 rgba(0,0,0,.8);
     transition: background-color.5s;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #FFF;
-    transition: 0.5s;
-    padding-top: 0px;
-	  overflow-y:hidden;
-	  overflow-x: hidden;
-}
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #121212;
-    display: block;
-    transition: 0.3s;
-	  overflow-y:hidden;
-	  overflow-x: hidden;
-}
-.sidenav a:hover, .offcanvas a:focus{
-    color: #818181;
-}
-.sidenav .closebtn {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    font-size: 36px;
 }
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+	
 #header {
 	width:100%;
-	height:48px;
-  position:absolute;
+	height:32px;
+  position:fixed;
   top:0px;
 }
 #myframe {
@@ -70,43 +35,145 @@ body {
 	left:0px;
 	overflow-x: hidden;
 }
-span {
+*span, *button {
 	cursor:pointer;
 	color:#FFF;
+}
+	/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 </style>
 </head>
 
 <body>
-<div id="mySidenav" class="sidenav" style="overflow-y:hidden;">
-	<a style="position:absolute; top:0px;left:200px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<iframe src="fbIframe.html" name="myFrame" id="myFrame" width="310" height="440" style="border:0px;overflow-y:hidden;"></iframe>	
 	
-	<a style="margin-left:-40px;" id="download" href="dl.html" target="myFrame">Download</a>	
-  <a style="margin-top:-10px;margin-left:-40px;" id="chat" href="https://friendly-chat-b2d6a.firebaseapp.com/" target="_blank">Contact</a>
-	</div>
-	<div id="header"><a type="action" class="btn btn-lg" style="margin-top:6px;">
-	<span style="position:absolute;top:5px;left:10px;font-size:30px;" onclick="openNav()">&#9776;</span>
-		</a></div>	
-  <div id="app"></div>
-	<!--a id="repos" href="https://github.com/lifeluvr?tab=repositories" target="_blank">Repos</a-->		
-	<script type="text/javascript">
-function openNav() {
-    document.getElementById("mySidenav").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
-}
+<div class="dropdown" id="header">
+	<button class="dropbtn" id="title">
+		<h3><em>EzMusic</em></h3>
+	</button>
+  <div class="dropdown-content">
+	<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal1">Downloads</button>	<br>
+	<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal2">About</button>	<br>
+	<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal3">Contact</button>	
+  </div>
+</div>
+	
+<!-- Modal1 -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">info
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Downloads</h4>
+      </div>
+      <div class="modal-body">
+        <p>Soon!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+      </div>
+    </div>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
-}
-</script>
+  </div>
+</div>
+	
+<!-- Modal2 -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+				<big>About</big>
+      </div>
+      <div class="modal-body">
+        <img src="256x256.png"></img><br>
+			<p>"Learning every thing the hard way so you don't have to!"</p><br>
+				<a href="https://github.com/lifeluvr?tab=repositories">Github Repositories</a>
+			</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+	
+<!-- Modal3 -->
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe src="https://friendly-chat-b2d6a.firebaseapp.com/" width="480" frame-border="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal">x</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+	
+  <div id="app"></div>
+		
 <script>
 $(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal();
+    $("#myBtn1").click(function(){
+        $("#myModal1").modal();
+    });
+});
+$(document).ready(function(){
+    $("#myBtn2").click(function(){
+        $("#myModal2").modal();
+    });
+});
+$(document).ready(function(){
+    $("#myBtn3").click(function(){
+        $("#myModal3").modal();
     });
 });
 </script>
