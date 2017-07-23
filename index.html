@@ -34,7 +34,7 @@ body {
 	  color: #121212;
 }
 	
-*i, a*, *button {
+*i, *a, *button {
 	  cursor:pointer;
 }
 	/* Dropdown Button */
@@ -88,23 +88,9 @@ body {
     background-color: #3e8e41;
 }
 </style>
-<script>	
-	  
-    const {remote} = require('chrome');
-    const {Menu, MenuItem} = remote;
-	    let menu1 = new Menu();
-    menu1.append(new MenuItem({ label: 'Downloads', click () {openModal1()} }));
-    menu1.append(new MenuItem({ label: 'About', click () {openModal2()} }));
-    menu1.append(new MenuItem({ label: 'Contact', click () {openModal3()} }));
-    window.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-    menu1.popup(remote.getCurrentWindow());
-    }, false);
-    </script>
 </head>
 
 <body>
-	
 <div class="dropdown" id="header">
 	<button class="dropbtn" id="title">
 		<big><i class="fa fa-headphones" aria-hidden="true"></i><em> EzMusic</em></big>
@@ -118,10 +104,10 @@ body {
 	
 <!-- Modal1 -->
 <div id="myModal1" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">Downloads <i class="fa fa-download" aria-hidden="true"></i>
+  <div class="modal-dialog modal-sm">
     <!-- Modal content-->
     <div class="modal-content">
-    <div class="modal-body" style="color: #121212;">
+    <div class="modal-body"><br>
       <b>Android</b>
       <p><a href="#" target="_blank">Google Play Store <i class="fa fa-android"></i></a><p/>
       <b>Windows</b>
@@ -134,7 +120,7 @@ body {
       <p><a href="#" target="_blank">For Mavericks+ <i class="fa fa-apple"></i></a><p/>
     </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
       </div>
     </div>
 
@@ -143,17 +129,17 @@ body {
 	
 <!-- Modal2 -->
 <div id="myModal2" class="modal fade" role="dialog">
-  <div class="modal-dialog">About <i class="fa fa-info-circle" aria-hidden="true"></i>
+  <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-body" style="color: #121212;">
+      <div class="modal-body"><br>
 			<p>Brought to you by...</p><br>
         <img src="dclogo.png"></img><br>
 			<p>"Learning every thing the hard way<br> so you don't have to!"</p><br>
 				<a href="https://github.com/lifeluvr?tab=repositories">Github Repositories <i class="fa fa-github-alt" aria-hidden="true"></i></a>
 			</div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
       </div>
     </div>
 
@@ -162,10 +148,10 @@ body {
 	
 <!-- Modal3 -->
 <div id="myModal3" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">Contact <i class="fa fa-edit" aria-hidden="true"></i>
+  <div class="modal-dialog modal-sm">
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-body" style="color: #121212;">
+      <div class="modal-body"><br>
         <b><a href="tel:+16197864687" target="_top"> Call <i class="fa fa-phone"></i></a></b><br></br>
         <b><a href="sms:+16197864687" target="_top"> Text <i class="fa fa-send"></i></a></b><br></br>
         <b><a href="mailto:duncecapsoftware@gmail.com?Subject=About%20EzMusic" target="_top"> Email <i class="fa fa-envelope"></i></a></b>
@@ -173,7 +159,7 @@ body {
         <b><a href="https://friendly-chat-b2d6a.firebaseapp.com/" target="_blank"> Leave a note <i class="fa fa-edit"></i></a></b>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
       </div>
     </div>
 
