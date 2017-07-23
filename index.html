@@ -24,26 +24,23 @@ body {
 }
 	
 #header {
-	width:100%;
-	height:32px;
-  position:fixed;
-  top:0px;
-	left:0px;
+	  width:100%;
+	  height:32px;
+    position:fixed;
+    top:0px;
+	  left:0px;
 }
-#myframe {
-  position:absolute;
-	top:0px;
-	left:0px;
-	overflow-x: hidden;
+.modal-body {
+	  color: #121212;
 }
-*span, *button {
-	cursor:pointer;
-	color:#FFF;
+	
+*i, a*, *button {
+	  cursor:pointer;
 }
 	/* Dropdown Button */
 .dropbtn {
     background: transparent;
-    color: white;
+    color: #ffffff;
 	  border: 0px;
     padding: 7px;
     font-size: 16px;
@@ -72,7 +69,7 @@ body {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: #121212;
     padding: 6px 8px;
     text-decoration: none;
     display: block;
@@ -91,6 +88,19 @@ body {
     background-color: #3e8e41;
 }
 </style>
+<script>	
+	  
+    const {remote} = require('chrome');
+    const {Menu, MenuItem} = remote;
+	    let menu1 = new Menu();
+    menu1.append(new MenuItem({ label: 'Downloads', click () {openModal1()} }));
+    menu1.append(new MenuItem({ label: 'About', click () {openModal2()} }));
+    menu1.append(new MenuItem({ label: 'Contact', click () {openModal3()} }));
+    window.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    menu1.popup(remote.getCurrentWindow());
+    }, false);
+    </script>
 </head>
 
 <body>
@@ -113,15 +123,15 @@ body {
     <div class="modal-content">
     <div class="modal-body" style="color: #121212;">
       <b>Android</b>
-      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">Google Play Store <i class="fa fa-android"></i></a><p/>
+      <p><a href="#" target="_blank">Google Play Store <i class="fa fa-android"></i></a><p/>
       <b>Windows</b>
-      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">32 Bit Systems <i class="fa fa-windows"></i></a><p/>
-      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">64 Bit Systems <i class="fa fa-windows"></i></a><p/>
+      <p><a href="#" target="_blank">32 Bit Systems <i class="fa fa-windows"></i></a><p/>
+      <p><a href="#" target="_blank">64 Bit Systems <i class="fa fa-windows"></i></a><p/>
       <b>Linux</b>
-      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">32 Bit Systems <i class="fa fa-linux"></i></a><p/>
-      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">64 Bit Systems <i class="fa fa-linux"></i></a><p/>
+      <p><a href="#" target="_blank">32 Bit Systems <i class="fa fa-linux"></i></a><p/>
+      <p><a href="#" target="_blank">64 Bit Systems <i class="fa fa-linux"></i></a><p/>
       <b>OSX</b>
-      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">For Mavericks+ <i class="fa fa-apple"></i></a><p/>
+      <p><a href="#" target="_blank">For Mavericks+ <i class="fa fa-apple"></i></a><p/>
     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
@@ -137,8 +147,9 @@ body {
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body" style="color: #121212;">
+			<p>Brought to you by...</p><br>
         <img src="dclogo.png"></img><br>
-			<p style="color: #121212;">"Learning every thing the hard way<br> so you don't have to!"</p><br>
+			<p>"Learning every thing the hard way<br> so you don't have to!"</p><br>
 				<a href="https://github.com/lifeluvr?tab=repositories">Github Repositories <i class="fa fa-github-alt" aria-hidden="true"></i></a>
 			</div>
       <div class="modal-footer">
