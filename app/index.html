@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <title>EzMusic App</title>
+    <script src="../public/jquery.min.js"></script>
+    <script src="../public/bootstrap.min.js"></script>
+    <script src="../public/frameless_window.js"></script>
+    <script src="../public/context_menu.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../public/style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <div id="inner-content">
+        <webview src="https://lifeluvr.github.io/ezmusic"></webview>
+        <div id="drag" name="drag">
+          <div class="dropdown" id="header">
+          	<button class="dropbtn" id="title">
+		<big><i class="fa fa-headphones" aria-hidden="true"></i><em> EzMusic</em></big>
+	</button>
+  <div class="dropdown-content">
+	<p><a href="#" data-toggle="modal" data-target="#myModal1">Downloads <i class="fa fa-download" aria-hidden="true"></i></a></p>
+	<p><a href="#" data-toggle="modal" data-target="#myModal2">About <i class="fa fa-info-circle" aria-hidden="true"></i></a></p>
+	<p><a href="#" data-toggle="modal" data-target="#myModal3">Contact <i class="fa fa-edit" aria-hidden="true"></i></a></p>	
+     </div>
+   </div>
+   
+  </div>
+        <div id="fButtons">
+          <!-- Trigger the modal with a button -->
+          <button id="min" class="btn btn-xs btn-warning">-</button>
+          <button id="max" class="btn btn-xs btn-success">+</button>
+          <button id="exit" class="btn btn-danger btn-xs">x</button>
+        </div>
+      </div>
+    </div>
+<!-- Modal1 -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <!-- Modal content-->
+    <div class="modal-content">
+    <div class="modal-body"><br>
+      <b>Android</b>
+      <p><a href="#" target="_blank">Google Play Store <i class="fa fa-android"></i></a><p/>
+      <b>Windows</b>
+      <p><a href="#" target="_blank">32 Bit Systems <i class="fa fa-windows"></i></a><p/>
+      <p><a href="#" target="_blank">64 Bit Systems <i class="fa fa-windows"></i></a><p/>
+      <b>Linux</b>
+      <p><a href="#" target="_blank">32 Bit Systems <i class="fa fa-linux"></i></a><p/>
+      <p><a href="#" target="_blank">64 Bit Systems <i class="fa fa-linux"></i></a><p/>
+      <b>OSX</b>
+      <p><a href="#" target="_blank">For Mavericks+ <i class="fa fa-apple"></i></a><p/>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+	
+<!-- Modal2 -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body"><br>
+			<p>Brought to you by...</p><br>
+        <img src="dclogo.png"></img><br>
+			<p>"Learning every thing the hard way<br> so you don't have to!"</p><br>
+				<a href="https://github.com/lifeluvr?tab=repositories">Github Repositories <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+			</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+	
+<!-- Modal3 -->
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body"><br>
+        <b><a href="tel:+16197864687" target="_top"> Call <i class="fa fa-phone"></i></a></b><br></br>
+        <b><a href="sms:+16197864687" target="_top"> Text <i class="fa fa-send"></i></a></b><br></br>
+        <b><a href="mailto:duncecapsoftware@gmail.com?Subject=About%20EzMusic" target="_top"> Email <i class="fa fa-envelope"></i></a></b>
+        <p>  or...</p>
+        <b><a href="https://friendly-chat-b2d6a.firebaseapp.com/" target="_blank"> Leave a note <i class="fa fa-edit"></i></a></b>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+		
+<script>
+$(document).ready(function(){
+    $("#myBtn1").click(function(){
+        $("#myModal1").modal();
+    });
+});
+$(document).ready(function(){
+    $("#myBtn2").click(function(){
+        $("#myModal2").modal();
+    });
+});
+$(document).ready(function(){
+    $("#myBtn3").click(function(){
+        $("#myModal3").modal();
+    });
+});
+</script>
+  <script src="../public/jquery.min.js"></script>
+  <script src="../public/bootstrap.min.js"></script>
+  <div id="hidden">
+    <button id="close-window-button"></button>
+    <button id="minimize-window-button"></button>
+    <button id="maximize-window-button"></button>
+    <button id="unmaximize-window-button"></button>
+    <button id="toggle-window-button"></button>
+    <button id="maxmin-window-button"></button>
+    <input type="checkbox" id="left-box">
+    <input type="checkbox" id="bottom-box">
+    <input type="checkbox" id="right-box">
+    <input type="checkbox" id="top-box">
+  </div>
+</body>
+</html>
