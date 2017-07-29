@@ -4,36 +4,36 @@
     <script src="../public/jquery.min.js"></script>
     <script src="../public/bootstrap.min.js"></script>
     <script src="../public/frameless_window.js"></script>
-    <script src="../public/context_menu.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../public/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../public/style.css" />
   </head>
   <body>
     <div id="content">
-      <div id="inner-content">
+      <div id="inner-content" class="container">
+				
         <webview src="https://lifeluvr.github.io/ezmusic"></webview>
-        <div id="drag" name="drag">
-          <div class="dropdown" id="header"">
-    <button id="title" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-		<big><i class="fa fa-headphones" aria-hidden="true"></i><em> EzMusic</em></big>
-	</button>
-  <ul class="dropdown-menu">
-	<li><a href="#" data-toggle="modal" data-target="#myModal1">Downloads <i class="fa fa-download" aria-hidden="true"></i></a></li>
-	<li><a href="#" data-toggle="modal" data-target="#myModal2">About <i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
-	<li><a href="#" data-toggle="modal" data-target="#myModal3">Contact <i class="fa fa-edit" aria-hidden="true"></i></a></li>	
-     </ul>
-   </div>
-   
-  </div>
+				
+				<div id="drag" name="drag"></div>
+				
+        <div class="dropdown" id="header">
+         <button id="title" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><big><i class="fa fa-headphones" aria-hidden="true"></i><em> EzMusic</em></big></button>
+          <ul class="dropdown-menu">
+	         <li><a href="#" data-toggle="modal" data-target="#myModal1">Downloads <i class="fa fa-download"></i></a></li>
+	         <li><a href="#" data-toggle="modal" data-target="#myModal2">About <i class="fa fa-info-circle"></i></a></li>
+	         <li><a href="#" data-toggle="modal" data-target="#myModal3">Contact <i class="fa fa-edit"></i></a></li>	
+          </ul>
+        </div>
+ 
         <div id="fButtons">
-          <!-- Trigger the modal with a button -->
           <button id="min" class="btn btn-xs btn-warning">-</button>
           <button id="max" class="btn btn-xs btn-success">+</button>
           <button id="exit" class="btn btn-danger btn-xs">x</button>
         </div>
-      </div>
-    </div>
+				
+      </div><!-- End inner-content -->
+    </div><!-- End content -->
+		
 <!-- Modal1 -->
 <div id="myModal1" class="modal fade" role="dialog">
   <div class="modal-dialog modal-sm">
