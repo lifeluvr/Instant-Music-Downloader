@@ -4,12 +4,6 @@
   <meta charset="utf-8">
   <title>EzMusic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" href="./public/bootstrap.min.css">
-  <script src=./public/bootstrap.min.js"></script>
   <link href="./public/c18ee732f991dc234ab539e0cf7f4e3e.css" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.png">
 <style type="text/css">
@@ -20,177 +14,17 @@ body {
 	  text-shadow: 0 -1 rgba(0,0,0,.8);
     transition: background-color.5s;
 }
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-	
-#header {
-	  width:100%;
-	  height:32px;
-    position:fixed;
-    top:0px;
-	  left:0px;
-}
-.modal-body {
-	  color: #121212;
-}
-	
+
 *i, *a, *button {
 	  cursor:pointer;
-}
-	/* Dropdown Button */
-.dropbtn {
-    background: transparent;
-    color: #ffffff;
-	  border: 0px;
-    padding: 7px;
-    font-size: 16px;
-    cursor: pointer;
-	  position: absolute;
-	  top: 0px;
-	  left: 4px; 
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-	  border-radius: 6px;
-    background-color: #f9f9f9;
-    min-width: 140px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: #121212;
-    padding: 6px 8px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #121212; color: #ffffff;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
 }
 </style>
 </head>
 
 <body>
-<div class="dropdown" id="header">
-	<button class="dropbtn" id="title">
-		<big><i class="fa fa-headphones" aria-hidden="true"></i><em> EzMusic</em></big>
-	</button>
-  <div class="dropdown-content">
-	<p><a href="#" data-toggle="modal" data-target="#myModal1">Downloads <i class="fa fa-download" aria-hidden="true"></i></a></p>
-	<p><a href="#" data-toggle="modal" data-target="#myModal2">About <i class="fa fa-info-circle" aria-hidden="true"></i></a></p>
-	<p><a href="#" data-toggle="modal" data-target="#myModal3">Contact <i class="fa fa-edit" aria-hidden="true"></i></a></p>	
-  </div>
-</div>
-	
-<!-- Modal1 -->
-<div id="myModal1" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
-    <!-- Modal content-->
-    <div class="modal-content">
-    <div class="modal-body"><br>
-      <b>Android</b>
-      <p><a href="#" target="_blank">Google Play Store <i class="fa fa-android"></i></a><p/>
-      <b>Windows</b>
-      <p><a href="#" target="_blank">32 Bit Systems <i class="fa fa-windows"></i></a><p/>
-      <p><a href="#" target="_blank">64 Bit Systems <i class="fa fa-windows"></i></a><p/>
-      <b>Linux</b>
-      <p><a href="#" target="_blank">32 Bit Systems <i class="fa fa-linux"></i></a><p/>
-      <p><a href="#" target="_blank">64 Bit Systems <i class="fa fa-linux"></i></a><p/>
-      <b>OSX</b>
-      <p><a href="#" target="_blank">For Mavericks+ <i class="fa fa-apple"></i></a><p/>
-    </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
-      </div>
-    </div>
-
-  </div>
-</div>
-	
-<!-- Modal2 -->
-<div id="myModal2" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-body"><br>
-			<p>Brought to you by...</p><br>
-        <img src="dclogo.png"></img><br>
-			<p>"Learning every thing the hard way<br> so you don't have to!"</p><br>
-				<a href="https://github.com/lifeluvr?tab=repositories">Github Repositories <i class="fa fa-github-alt" aria-hidden="true"></i></a>
-			</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
-      </div>
-    </div>
-
-  </div>
-</div>
-	
-<!-- Modal3 -->
-<div id="myModal3" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-body"><br>
-        <b><a href="tel:+16197864687" target="_top"> Call <i class="fa fa-phone"></i></a></b><br></br>
-        <b><a href="sms:+16197864687" target="_top"> Text <i class="fa fa-send"></i></a></b><br></br>
-        <b><a href="mailto:duncecapsoftware@gmail.com?Subject=About%20EzMusic" target="_top"> Email <i class="fa fa-envelope"></i></a></b>
-        <p>  or...</p>
-        <b><a href="https://friendly-chat-b2d6a.firebaseapp.com/" target="_blank"> Leave a note <i class="fa fa-edit"></i></a></b>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn-xl" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i></button>
-      </div>
-    </div>
-
-  </div>
-</div>
 	
   <div id="app"></div>
-		
-<script>
-$(document).ready(function(){
-    $("#myBtn1").click(function(){
-        $("#myModal1").modal();
-    });
-});
-$(document).ready(function(){
-    $("#myBtn2").click(function(){
-        $("#myModal2").modal();
-    });
-});
-$(document).ready(function(){
-    $("#myBtn3").click(function(){
-        $("#myModal3").modal();
-    });
-});
-</script>
-	
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
-  <script src=./public/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script> 
