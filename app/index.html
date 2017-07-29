@@ -11,8 +11,9 @@
 		/* Dropdown Button */
 .dropbtn {
     background-color: rgba(0,0,0,0);
-    color: white;
+    color:#fff;
     padding: 16px;
+	  font-family: "Comic Sans MS";
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -36,7 +37,7 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color:#000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -52,13 +53,13 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    border: 1px solid #fff;
 }
 		</style>
 		</head>
 		<body>
 			<div id="content">
-				<div id="inner-content" class="container">
+				<div id="inner-content">
 					<webview src="https://lifeluvr.github.io/ezmusic"></webview>
 					<div id="drag" name="drag"></div>
 					
@@ -180,7 +181,7 @@
 
 
 		
-<script>
+<!--script>
 $(document).ready(function(){
     $("#myBtn1").click(function(){
         $("#myModal1").modal();
@@ -196,7 +197,7 @@ $(document).ready(function(){
         $("#myModal3").modal();
     });
 });
-</script>
+</script-->
   <script src="../public/jquery.min.js"></script>
   <script src="../public/bootstrap.min.js"></script>
   <div id="hidden">
