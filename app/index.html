@@ -7,6 +7,54 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 			<link rel="stylesheet" type="text/css" href="../public/bootstrap.min.css" />
 			<link rel="stylesheet" type="text/css" href="../public/style.css" />
+		<style>
+		/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+		</style>
 		</head>
 		<body>
 			<div id="content">
@@ -14,42 +62,15 @@
 					<webview src="https://lifeluvr.github.io/ezmusic"></webview>
 					<div id="drag" name="drag"></div>
 					
-					<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+<div class="dropdown">
+  <button class="dropbtn"><big><i class="fa fa-headphones" aria-hidden="true"></i><em> EzMusic</em></big></button>
+  <div class="dropdown-content">
+		<a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal1">Downloads <i class="fa fa-download"></i></a>
+		<a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal2">About <i class="fa fa-info-circle"></i></a>
+    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal3">Contact <i class="fa fa-info-edit"></i></a>
   </div>
 </div>
-					
-					
-					<!--div class="btn-group">
-						<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<big>
-								<i class="fa fa-headphones" aria-hidden="true"></i>
-								<em> EzMusic</em>
-							</big>
-						</button>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal1">Downloads 
-								<i class="fa fa-download"></i>
-							</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal2">About 
-								<i class="fa fa-info-circle"></i>
-							</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal3">Contact 
-								<i class="fa fa-info-edit"></i>
-							</a>
-						</div>
-					</div-->
-					
-					
-					
+				
 					<div id="fButtons">
 						<button id="min" class="btn btn-xs btn-warning">-</button>
 						<button id="max" class="btn btn-xs btn-success">+</button>
