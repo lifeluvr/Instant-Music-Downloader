@@ -18,11 +18,30 @@ body {
 *i, *a, *button {
 	  cursor:pointer;
 }
+div#main {
+	position: absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	}
+#bgFrame {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	border:0px;
+	}
+#app {
+	position:fixed;
+	}
 </style>
 </head>
 
 <body>
-	
+	<div id="main"><iframe id="bgFrame" src="./background.html"></iframe></div>
   <div id="app"></div>
 
 	<script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
