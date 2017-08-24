@@ -28,46 +28,20 @@ body {
 	width:100%;
 	overflow:hidden;
 	}
-	
-button:hover {
-color:#a4c639;
-background: #FFF;
-border:1px solid #a4c639;
-}
-#parent > button {
-  opacity: 0.3;
-  position:relative;
-  float: right;
-  right:10px;
-  bottom:35px;
-  transition: 0.5s;
-}
-#parent > button {
-  opacity: 1;
-} 
+
 #bgFrame {
 	width:100%;
 	height:100%;
 	overflow:hidden;
 	border:0px;
 	}
-#music {
-  position:absolute; bottom:66px; right:12px; background:#212121; width:54px; height:54px;
-	border-radius:50%;
-	}
 </style>
 </head>
 
 <body>
 	<div id="parent"><iframe id="bgFrame" src="./background.html"></iframe>
-	<button onclick="myFunction()" id="music"><i class="glyphicon glyphicon-modal-window"></i></button>
 	  </div>
   <div id="app"></div>
-<script>
-function myFunction() {
-    var myWindow = window.open("https://lifeluvr.github.io/ezmusic/", "", "width=680,height=420");
-}
-</script>
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script> 
 </body>
