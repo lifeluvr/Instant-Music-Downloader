@@ -1,71 +1,65 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>EzMusic</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet"./public/bootstrap.min.css">
-  <script src="./public/jquery.min.js"></script>
-  <script src="./public/bootstrap.min.js"></script>
-  <link href="./public/b124bec3d66a2331e286f87298716c24.css" rel="stylesheet">
-  <style type="text/css">
-body {
-    font-family: Comic Sans MS;
-	  font-size: 16px;
-	  font-weight:bold;
-	  text-shadow: 0 -1 rgba(0,0,0,.8);
-    transition: background-color.5s;
-}
-	#header {
-		background: rgba(0,0,0,0);
-		color: #FFF;
-	  position:absolute;
-		top: 0px;
-		left: 0px;
-}	
-	#title {
-		width: 120px;
-		border: 0px;
-		border-radius: 10px;
-		background: rgba(0,0,0,0);
-		color:#FFF;	
-}	
-	</style>
-</head>
-
-<body>
-	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="myModal">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <!--button type="button" class="close" data-dismiss="modal">×</button-->
-          <b style="color:#121212" class="modal-title"><em>Dedicated to my good friend Nancy!</em></b>
-        </div>
-        <div class="modal-body">
-         <p style="color:#121212">
-	 When most folks would snicker and laugh and call me crazy...<br>
-	 Okay, yeah, you believed them! (It's okay, me too!) But...<br>
-	 From day one, you have always been there for me!<br>
-	 You have supported my journey and, believed in my dreams!<br>
-	 But the one thing I will always be most grateful for...<br> 
-	 You taught me to believe in myself!<br>
-		<i class="fa fa-heart"></i><em> Thank You! </em><i class="fa fa-heart"></i></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" style="width:30px;height:30px;background:red;color:#FFF;border-radius:10px;" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
-        </div>
+   <head>
+      <meta charset="utf-8">
+      <title>EzMusic</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link rel="stylesheet"./public/bootstrap.min.css">
+      <script src="./public/jquery.min.js"></script>
+      <script src="./public/bootstrap.min.js"></script>
+      <link href="./public/b124bec3d66a2331e286f87298716c24.css" rel="stylesheet">
+      <style type="text/css">
+         body {
+         font-family: Comic Sans MS;
+         font-size: 16px;
+         font-weight:bold;
+         text-shadow: 0 -1 rgba(0,0,0,.8);
+         transition: background-color.5s;
+         }
+         #header {
+         background: rgba(0,0,0,0);
+         color: #FFF;
+         position:absolute;
+         top: 0px;
+         left: 0px;
+         }	
+         #title {
+         width: 120px;
+         border: 0px;
+         border-radius: 10px;
+         background: #212121;
+         color:#FFF;	
+         }	
+      </style>
+   </head>
+   <body>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="myModal">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close btn-danger" data-dismiss="modal"><i class="fa fa-close-circled"></i></button>
+                  <b style="color:#121212" class="modal-title"><em>Links and Options</em></b>
+               </div>
+               <div class="modal-body">
+                  <p style="color:#212121">
+                  <p>Available soon for most devices! The EzMusic App! <a href="https://github.com/lifeluvr/ezmusic">Download <i class="fa fa-download"></i></a></p>
+                  <p>Stop by and visit our EzMusic Facebook page! <a href="https://www.facebook.com/dcezmusic/">Facebook <i class="fa fa-facebook"></i></a></p>
+                  <p>This app was brought to you by <a href="https://github.com/lifeluvr/ezmusic">Dunce Cap Software <i class="fa fa-info-circled"></i></a></p>
+                  <p>You can create a fork of this project at <a href="https://github.com/lifeluvr/ezmusic">Github <i class="fa fa-github"></i></a></p>
+               </div>
+               <!--div class="modal-footer">
+                  <button type="button" style="width:30px;height:30px;background:red;color:#FFF;border-radius:10px;" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+                  </div-->
+            </div>
+         </div>
       </div>
-    </div>
-</div>
-	<div id="header">
-		<button id="title" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg" aria-hidden-"true"><b><i class="fa fa-headphones"></i><em> EzMusic</em></b></button>
-	</div>
-  <div id="app"></div>
-  <script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script>
-</body>
-
+      <div id="header">
+         <button id="title" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg" aria-hidden-"true"><b><i class="fa fa-headphones"></i><em> EzMusic</em></b></button>
+      </div>
+      <div id="app"></div>
+      <script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script>
+   </body>
 </html>
