@@ -132,10 +132,30 @@ div.search .search-wrapper input#search-input {
 body {
 	background-color: #000;
 	color: #fff;
-	font-family: Lato, tahoma, verdana, arial, sans-serif;
+        font-size: 16px;
+        font-weight:bold;
+        font-family: Comic Sans MS;
 	text-align: center;
-	text-shadow: 0 -1px rgba(0, 0, 0, .8)
+	text-shadow: 0 -1px rgba(0, 0, 0, .8);
+        transition: background-color.5s;	
 }
+
+#header {
+         background: rgba(0,0,0,0);
+         color: #FFF;
+         position:absolute;
+         top: 0px;
+         left: 0px;
+         }	
+         #title {
+         width: 128px;
+         border: 0px;
+         border-radius: 10px;
+         background: #212121;
+         color:#FFF;	
+	 margin-top:2px;	
+	 margin-left:3px;								
+         }	
 a {
 	color: #aaa;
 	text-decoration: none
