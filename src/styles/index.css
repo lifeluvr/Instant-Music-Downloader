@@ -1,5 +1,6 @@
 }
 .background {
+  background-image: url('./public/background.html');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
