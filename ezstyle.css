@@ -1,21 +1,21 @@
 @media only screen and (min-width:240px) {
 	.background {
-		background: url("background.html") 50%/cover no-repeat fixed
+		background: url("./public/background.html") 50%/cover no-repeat fixed
 	}
 }
 @media only screen and (min-width:768px) {
 	.background {
-		background: url("background.html") 50%/cover no-repeat fixed
+		background: url("./public/background.html") 50%/cover no-repeat fixed
 	}
 }
 @media only screen and (min-width:992px) {
 	.background {
-		background: url("background.html") 50%/cover no-repeat fixed
+		background: url("./public/background.html") 50%/cover no-repeat fixed
 	}
 }
 @media only screen and (min-width:1280px) {
 	.background {
-		background: url("background.html") 50%/cover no-repeat fixed
+		background: url("./public/background.html") 50%/cover no-repeat fixed
 	}
 }
 * {
