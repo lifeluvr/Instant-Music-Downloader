@@ -21,28 +21,31 @@
 				 bottom:0;
 				 left:0;
 			 }
+			 b, p {
+			   color:#212121;
+			 }
    </head>
    <body>
 		 <iframe id="bgFrame" src="./public/background.html"></iframe>
-      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Links and Options" aria-hidden="true"  id="myModal">
+      <div class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="Links and Options" aria-hidden="true"  id="myModal">
          <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                <div class="modal-header">
                   <h4 style="color:#212121" class="modal-title"><a href="https://github.com/lifeluvr/ezmusic"><em>Dunce Cap Software</em></a></h>
-			           <button type="button" style="float:right;background:#212121;color:#FFF;border-radius:10px;" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+			           <button type="button" style="float:right;" class="close" data-dismiss="modal" aria-hidden="true"><i style="color:red;" class="fa fa-close"></i></button>
                </div>
                <div class="modal-body">
-									<p style="color:#212121">"Learning every thing the hard way so you don't have to!"</p><br>										
-                  <b style="color:#212121">Available soon for most devices! The EzMusic App! <a href="https://github.com/lifeluvr/ezmusic">Download <i class="fa fa-download"></i></a></b><br>
-                  <b style="color:#212121">Stop by and visit our EzMusic Facebook page! <a href="https://www.facebook.com/dcezmusic/">Facebook <i class="fa fa-facebook"></i></a></b><br>
-                  <b style="color:#212121">You can create a fork of this project at <a href="https://github.com/lifeluvr/ezmusic">Github <i class="fa fa-github"></i></a></b>
+									<p>"Learning every thing the hard way so you don't have to!"</p><br>										
+                  <b>Available soon for most devices! The EzMusic App! <a href="https://github.com/lifeluvr/ezmusic">Download <i class="fa fa-download"></i></a></b><br>
+                  <b>Stop by and visit our EzMusic Facebook page! <a href="https://www.facebook.com/dcezmusic/">Facebook <i class="fa fa-facebook"></i></a></b><br>
+                  <b>You can create a fork of this project at <a href="https://github.com/lifeluvr/ezmusic">Github <i class="fa fa-github"></i></a></b>
                </div>
             </div>
          </div>
       </div>
       <div id="header">
-         <button id="title" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg" aria-hidden-"true"><b><i class="fa fa-headphones"></i><em> EzMusic</em></b></button>
+         <button id="title" class="btn btn-default" data-toggle="modal" data-target="modal-lg" aria-hidden-"true"><b><i class="fa fa-headphones"></i><em> EzMusic</em></b></button>
       </div>
       <div id="app"></div>
       <script type="text/javascript" src="public/7febcca36d7e06875dc4.js"></script>
