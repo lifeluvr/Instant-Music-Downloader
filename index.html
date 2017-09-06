@@ -1,76 +1,79 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>EzMusic</title>
+<head>
+  <meta charset="utf-8">
+  <title>EzMusic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-  <link href="./public/c18ee732f991dc234ab539e0cf7f4e3f.css" rel="stylesheet">
-	<!--link rel="stylesheet" href="ezstyle.css"-->	 
-	<link rel="shortcut icon" href="favicon.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-		 <style>
-			 
-         body {
-         font-family: Comic Sans MS;
-         font-size: 14px;
-         font-weight:bold;
-         text-shadow: 0 -1 rgba(0,0,0,.8);
-         transition: background-color.5s;
-         }
-         *i, *a, *button {
-         cursor:pointer;
-         }
-         #bgFrame {
-         width:100%;
-         height:100%;
-         overflow:hidden;
-         border:0px;
-         }		
-         #header {
-         background: rgba(0,0,0,0);
-         color: #FFF;
-         position:fixed;
-         top: 0px;
-         left: 0px;
-         }	
-         .title {
-         width: 120px;
-         border: 0px;
-         border-radius: 10px;
-         background: rgba(0,0,0,0);
-         color:#FFF;	
-         }	
-			 b, p, h4 {
-			   color:#212121;
-			 }
-   </head>
-   <body>
-      <div class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="Links and Options" aria-hidden="true"  id="myModal">
-         <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h4 class="modal-title"><a href="https://github.com/lifeluvr/ezmusic"><em>Dunce Cap Software</em></a></h>
-			           <button type="button" style="float:right;" class="close" data-dismiss="modal" aria-hidden="true"><i style="color:red;" class="fa fa-close"></i></button>
-               </div>
-               <div class="modal-body">
-									<p>"Learning every thing the hard way so you don't have to!"</p><br>										
-                  <b>Available soon for most devices! The EzMusic App! <a href="https://github.com/lifeluvr/ezmusic">Download <i class="fa fa-download"></i></a></b><br>
-                  <b>Stop by and visit our EzMusic Facebook page! <a href="https://www.facebook.com/dcezmusic/">Facebook <i class="fa fa-facebook"></i></a></b><br>
-                  <b>You can create a fork of this project at <a href="https://github.com/lifeluvr/ezmusic">Github <i class="fa fa-github"></i></a></b>
-               </div>
-            </div>
-         </div>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/c18ee732f991dc234ab539e0cf7f4e3e.css">
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <div id="top">
+      <img src="favicon.png" width="40" style="position: absolute;left: 4px;top: 4px;" />
+    <h2 style="margin-top: 10px;"><em>EzMusic</em></h2>
+      <a href="javascript:void(0)" class="closebtn" id="btnClose" onclick="closeNav()">&times;</a>
+        <hr style="width:240px;margin-top: -4px;" />
       </div>
-      <div id="header">
-         <button id="title" class="btn btn-default" data-toggle="modal" data-target="modal-lg" aria-hidden-"true"><b><i class="fa fa-headphones"></i><em> EzMusic</em></b></button>
-      </div>		 
-		 <iframe id="bgFrame" src="public/background.html"></iframe>
-      <div id="app"></div>
-      <script type="text/javascript" src="public/7febcca36d7e06875dc4.js"></script>
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script>
-   </body>
+      <a href="#" target="_blank">Download</a>  
+      <a href="#" target="_blank">Contact</a>
+      <a href="#" target="_blank">About</a>  
+      <a href="#" target="_blank">More</a>
+    <div id="dclogo">
+      <hr>
+      <p>"Learning every thing the hard way<br>so you don't have to!"
+      <img style="margin-right: -50px;" src="logo.png" width="160px"/></p>
+    </div>
+  </div>
+
+
+  <div id="mySidenavR" class="sidenav">
+      <div id="top">
+      <img src="favicon.png" width="36" stylpxe="position: absolute;left: 6px;top: 4px;" />
+    <h2 style="margin-top: 10px;"><em>EzMusic</em></h2>
+      <a href="javascript:void(0)" class="closebtn" id="btnClose" onclick="closeNav()">&times;</a>
+        <hr style="width:240px;margin-top: -4px;" />
+      </div>
+
+    <div id="dclogo">
+      <hr>
+      <p>"Learning every thing the hard way<br>so you don't have to!"
+      <img style="margin-right: -50px;" id="logo" src="logo.png" width="160px"/></p>
+    </div>
+  </div>
+
+  <div id="header">
+    <a type="action" class="btn btn-lg" id="btnOpen">
+    <span onclick="openNav()">&#9776;<em> EzMusic</em></span></a>
+  </div>  
+  
+  <div id="app"></div>
+
+  <script type="text/javascript" src="./public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./public/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
+  <script type="text/javascript">
+function openNav() {
+    document.getElementById("mySidenav").style.width = "260px";
+    document.getElementById("main").style.marginLeft = "260px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+}
+
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script> 
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script> 
+</body>
 </html>

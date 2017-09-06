@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EzMusic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/c18ee732f991dc234ab539e0cf7f4e3e.css">
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+    <h1><em>EzMusic</em></h1>
+      <a href="javascript:void(0)" class="closebtn" id="btnClose" onclick="closeNav()">&times;</a>
+        <br>
+      <a id="down" href="#">Download</a>  
+      <a id="chat" href="#">Contact</a>
+      <a id="info" href="#">About</a>  
+      <a id="more" href="#">More</a>
+    <div id="dclogo">
+      <hr>
+      <p>Brought to you by...
+      <img src="logo.png" width="160px"/><br></br>
+      "Learning every thing the hard way<br>so you don't have to!"</p>
+    </div>
+  </div>
+
+  <div id="header">
+    <a type="action" class="btn btn-lg" id="btnOpen" aria-disabled="true">
+    <span aria-disabled="true" onclick="openNav()">&#9776;<em> EzMusic</em></span></a>
+  </div>  
+  
+  <div id="app"></div>
+
+
+    <!-- myModal -->
+    <div class="modal fade" id="myModal" role="dialog" tabindex="0">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" style="float: right;"><span class="glyphicon glyphicon-remove"></span></button>
+            <b class="modal-title">Options</b>
+          </div>
+          <div class="modal-body">
+            <p>Enable Toolbar? &nbsp;<input type="checkbox" id="left-box"><p/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- aboutModal -->
+  <div class="modal fade" id="aboutModal" role="dialog" tabindex="0">
+    <div class="modal-dialog modal-sm" style="width: 260px;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" style="float: right;"><span class="glyphicon glyphicon-remove"></span></button>
+          <b class="modal-title">Dunce Cap Software</b>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <b>"Learning every thing the hard way so you don't have to!"</b><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contactModal -->
+<div class="modal fade" id="contactModal" role="dialog" tabindex="0">
+  <div class="modal-dialog modal-sm" style="width: 240px;">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <button type="button" class="btn btn-danger" data-dismiss="modal" style="float: right;"><span class="glyphicon glyphicon-remove"></span></button>
+        <b class="modal-title">Dunce Cap Software </b>
+      </div>
+      <div class="modal-body" style="width: 220px;">
+        <b><a href="tel:+16197864687" target="_top"> Call Now <span class="glyphicon glyphicon-phone"></span></a></b><br></br>
+        <b><a href="sms:+16197864687" target="_top"> Text Now <span class="glyphicon glyphicon-send"></span></a></b><br></br>
+        <b><a href="mailto:duncecapsoftware@gmail.com?Subject=About%20EzMusic" target="_top"> Email Now &nbsp;<span class="glyphicon glyphicon-envelope"></span></a></b><br></br>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- dlModal -->
+<div class="modal fade" id="dlModal" role="dialog" tabindex="0">
+<div class="modal-dialog modal-sm" style="width: 240px;">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" style="float: right;"><span class="glyphicon glyphicon-remove"></span></button>
+      <b class="modal-title">Downloads</b>
+    </div>
+    <div class="modal-body">
+      <b>Android</b>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">Google Play Store<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <b>Windows</b>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">32 Bit Systems<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">64 Bit Systems<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <b>Linux</b>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">32 Bit Systems<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">64 Bit Systems<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <b>OSX</b>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">For Mavericks+<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="./public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./public/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
+  <script type="text/javascript">
+function openNav() {
+    document.getElementById("mySidenav").style.width = "260px";
+    document.getElementById("main").style.marginLeft = "260px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+}
+
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script> 
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script> 
+</body>
+</html>
