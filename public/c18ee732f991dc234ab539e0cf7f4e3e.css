@@ -27,7 +27,7 @@ transition: 0.3s;
 color: #818181;
 }
 .sidenav .closebtn {
-position: relative;
+position: absolute;
 top: 0px;
 right: 0px;
 font-size: 36px;
@@ -41,14 +41,13 @@ left:0px;
 position:absolute;
 top:10px;
 left:12px;
+color: #fff; 
 text-decoration: none;
 font-size: 30px;
-}
-#top {
-text-decoration: none;
-font-size: px; 
 font-weight:400;
 text-shadow: 0 -1 rgba(0,0,0,.8);
+}
+#top {
 width: 240px;
 margin-left:10px;
 }
