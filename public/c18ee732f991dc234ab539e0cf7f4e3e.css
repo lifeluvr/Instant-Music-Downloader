@@ -28,8 +28,8 @@ color: #818181;
 }
 .sidenav .closebtn {
 position: absolute;
-top: 0px;
-right: 0px;
+top: 8px;
+right: 10px;
 font-size: 36px;
 }
 #header {
