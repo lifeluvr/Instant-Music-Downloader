@@ -4,30 +4,30 @@
   <meta charset="utf-8">
   <title>EzMusic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link rel="stylesheet" href="./public/c18ee732f991dc234ab539e0cf7f4e3e.css">
+  <link rel="stylesheet" href="styles/nature.css">
   <link rel="shortcut icon" href="favicon.png">
 </head>
   <body>
     <div id="mySidenav" class="sidenav">
-      <div id="top">
-				<span class="title"><img class="icon" src="favicon.png" width="30"/> &#9776;zMusic</span>
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div id="top" title="Next Theme: People">
+       <a type="button" href="people.html">
+	<span class="title">&#x1F3A7; EzMusic</span></a>
       </div>
-			<hr style="margin-top:45px;" />
-      <a href="javascript:void(0)" onclick="_blank">Download</a>  
-      <a href="#" target="_blank">Contact</a>
-      <a href="#" target="_blank">About</a>  
-      <a href="#" target="_blank">More</a>
-    <div id="dclogo">
-      <hr />
-      <p>"Learning every thing the hard way<br>so you don't have to!"</p>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <p style="margin-top:70px;"></p>
+      <a href="javascript:void(0)" onclick="" title="Get Apps!">Download</a>  
+      <a href="contact.html" target="_blank" title="Send Message">Contact</a>
+      <a href="about.html" target="_blank" title="Dunce Cap Software">About</a>  
+      <a href="more.html" target="_blank" title="Free  Stuff!">More</a>
+    <div id="dclogo" title="Dunce Cap Software">
+      <p>Brought to you by...</p>
       <img id="logo" src="logo.png" width="140px"/>
     </div>
   </div>
 		
-  <div id="header">
-    <a type="action" class="openbtn">
-    <span onclick="openNav()"><img class="icon" src="favicon2.png" width="30"/> &#9776;zMusic</span></a>
+  <div id="header" title="Main Menu">
+    <a type="button" class="openbtn">
+    <span onclick="openNav()">&#x1F3A7; EzMusic</span></a>
   </div>  
   
   <div id="app"></div>
@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
 });
 </script> 
-  <script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
+  <script type="text/javascript" src="ezmusic.js"></script>
 <!-- Go to www.addthis.com/dashboard to customize your tools --> 
  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script> 
 </body>
