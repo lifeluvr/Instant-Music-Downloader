@@ -25,6 +25,53 @@
     </div>
   </div>
 		
+    <div id="mySidechat" class="sidenav">
+      <div id="top" title="Next Theme: Floral">
+       <a type="button" href="floral.html">
+	<span class="title">&#x1F3A7; EzMusic</span></a>
+      </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeChat()">&times;</a>
+       <p style="margin-top:70px;"></p> 
+      <a href="javascript:void(0)" onclick="openChat()" title="Send Me A Message!">Contact</a>
+      <a href="javascript:void(0)" onclick="openAbout()" title="Dunce Cap Software!">About</a>
+      <a href="javascript:void(0)" onclick="openMore()" title="More Tinker Toys!">More</a>
+    <div id="dclogo" title="Dunce Cap Software">
+      <p>Brought to you by...</p>
+      <img id="logo" src="logo.png" width="140px"/>
+    </div>
+  </div>
+		
+    <div id="mySideabout" class="sidenav">
+      <div id="top" title="Next Theme: Floral">
+       <a type="button" href="floral.html">
+	<span class="title">&#x1F3A7; EzMusic</span></a>
+      </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeAbout()">&times;</a>
+       <p style="margin-top:70px;"></p> 
+      <a href="javascript:void(0)" onclick="openChat()" title="Send Me A Message!">Contact</a>
+      <a href="javascript:void(0)" onclick="openAbout()" title="Dunce Cap Software!">About</a>
+      <a href="javascript:void(0)" onclick="openMore()" title="More Tinker Toys!">More</a>
+    <div id="dclogo" title="Dunce Cap Software">
+      <p>Brought to you by...</p>
+      <img id="logo" src="logo.png" width="140px"/>
+    </div>
+  </div>
+		
+    <div id="mySideabout" class="sidenav">
+      <div id="top" title="Next Theme: Floral">
+       <a type="button" href="floral.html">
+	<span class="title">&#x1F3A7; EzMusic</span></a>
+      </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeAbout()">&times;</a>
+       <p style="margin-top:70px;"></p> 
+      <a href="javascript:void(0)" onclick="openChat()" title="Send Me A Message!">Contact</a>
+      <a href="javascript:void(0)" onclick="openAbout()" title="Dunce Cap Software!">About</a>
+      <a href="javascript:void(0)" onclick="openMore()" title="More Tinker Toys!">More</a>
+    <div id="dclogo" title="Dunce Cap Software">
+      <p>Brought to you by...</p>
+      <img id="logo" src="logo.png" width="140px"/>
+    </div>
+  </div>
   <div id="header" title="Main Menu">
     <a type="button" class="openbtn">
     <span onclick="openNav()">&#x1F3A7; EzMusic</span></a>
@@ -35,21 +82,51 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "260px";
     document.getElementById("main").style.marginLeft = "260px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+    document.body.style.backgroundColor = "#fff";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "#fff";
+}
+
+function openChat() {
+    document.getElementById("mySidechat").style.width = "480px";
+    document.getElementById("main").style.marginLeft = "480px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
 }
 
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal();
-    });
-});
+function closeChat() {
+    document.getElementById("mySidechat").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "#fff";
+}
+		
+function openAbout() {
+    document.getElementById("mySideabout").style.width = "480px";
+    document.getElementById("main").style.marginLeft = "480px";
+    document.body.style.backgroundColor = "#fff";
+}
+
+function closeAbout() {
+    document.getElementById("mySideabout").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "#fff";
+}
+function openMore() {
+    document.getElementById("mySidemore").style.width = "480px";
+    document.getElementById("main").style.marginLeft = "480px";
+    document.body.style.backgroundColor = "#fff";
+}
+
+function closeMore() {
+    document.getElementById("mySidemore").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "#fff";
+}
 </script> 
+  <!--script type="text/javascript" src="eznav.js"></script-->
   <script type="text/javascript" src="ezmusic.js"></script>
 <!-- Go to www.addthis.com/dashboard to customize your tools --> 
  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58358a470886e994"></script> 
